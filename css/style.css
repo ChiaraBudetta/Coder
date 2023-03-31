@@ -41,6 +41,7 @@ nav.compras {
     font-size: 1em;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 60px;
 
 }
 
@@ -159,17 +160,18 @@ main section div.grid div.video video {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto;
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
     "video texto"
     "video boton";
-    background-color: #6b7b93;
+    background-color: #6b7b93b3;
 }
 
 .video {
     display: flex;
     grid-area: video;
     justify-content: center;
+    width: 99%;
 }
 
 .texto{
@@ -179,11 +181,11 @@ main section div.grid div.video video {
     font-weight: 200;
     font-size: 1.3em;
     line-height: 1.4em;
-    align-items: flex-end;
     justify-content: center;
     padding: 15px;
     margin: 15px;
-    text-align: center;
+    text-align:center;
+    align-content: flex-end;
 }
 
 .boton {
@@ -194,6 +196,7 @@ main section div.grid div.video video {
     align-content: flex-start;
     padding: 15px;
     margin: 15px;
+    font-size: 1.6em;
 
 }
 
@@ -207,6 +210,7 @@ main section div.grid div.video video {
 
         div.boton a button:hover {
             font-weight: 500;
+            background-color: white;
         } 
 /* finaliza grid */
 
@@ -218,6 +222,7 @@ header {
     font-weight: 300;
     color: black;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 main form div{
@@ -361,6 +366,57 @@ main form div{
         }
 /* termina grid ofertas */
 
+/* comienza grid--ofertas__index */
+.grid--ofertas__index {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 26%);
+    grid-template-rows: auto;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+    div.grid--ofertas__index figure img {
+        width: 90%;
+        height: auto;
+        margin: 50px 20px 10px 20px;
+    }
+
+    div.grid--ofertas__index figure figcaption {
+        font-weight: 300;
+        font-size: 1em;
+        margin: 0 0 5px 20px;
+    }
+
+    div.grid--ofertas__index figure p {
+        display: inline-block;
+        font-weight: 300;
+        font-size: 1em;
+        margin: 0 0 5px 20px;
+    }
+
+        div.grid--ofertas__index figure p.precio_original {
+            text-decoration:line-through;
+        }
+
+        div.grid--ofertas__index figure p.oferta {
+            color: green;
+        }
+
+    div.grid--ofertas__index figure button {
+        font-weight: 300;
+        font-size: 1em;
+        margin: 0 0 5px 20px;
+        padding: 3px;
+        border: none;
+        background-color: transparent;
+        display: block;
+    }
+
+        div.grid--ofertas__index figure button:hover {
+            background-color: #1f3659;
+            color: white;
+        }
+/* finaliza grid--ofertas__index */
 
 /* comienza grid campaña */
 .grid__campaña {
@@ -403,7 +459,6 @@ main form div{
         }
 /* termina grid campaña */
 
-
 /* inicia footer */
 footer {
     font-family: 'Montserrat', sans-serif;
@@ -429,11 +484,11 @@ footer {
         }
 /* finaliza footer */
 
-@media (width < 991px) {
+/* mobile */
+@media (width < 768px) {
     .main_nav {
         display: none;
     }
-
     .grid {
         grid-template-columns: 100%;
         grid-template-rows: auto;
@@ -442,11 +497,34 @@ footer {
         "texto"
         "boton";
     }
-
+    .grid__indumentaria {
+        grid-template-columns: 90%;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+    .box_top{
+        font-size: .7em;
+    }
+    header {
+        font-size: 2em;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .categorias {
+        font-size: .7em;
+    }
+    .grid__accesorios {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
 }
 
-@media (width > 991px) {
+/* desktop */
+@media (width > 768px) {
     .navbar {
+        display: none;
+    }
+    .compras {
         display: none;
     }
 }
