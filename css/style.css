@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
+
+/* * {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+.box_top {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: .9em;
+    background-color: black;
+    color: white;
+    padding: 6px;
+    margin: 0;
+    justify-content: center;
+}
+
+nav.compras {
+    display: flex;
+    justify-content: flex-end;
+}
+
+    nav.compras a {
+        text-decoration: none;
+    }
+        nav.compras a img{
+            width: 24px;
+            height: auto;
+            margin: 20px 16px 0 0;
+            padding: 2px;
+        }
+
+.main_nav {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    font-weight: 300;
+    font-size: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+    nav.main_nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    nav.main_nav ul li {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    nav.main_nav a {
+        text-decoration: none;
+    }
+
+        nav.main_nav a h1.logo {
+            font-size: 5em;
+            color: #1f3659;
+            font-weight: 200;
+        }
+
+        nav.main_nav ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        nav.main_nav ul li a:hover {
+            color: black;
+            font-weight: 500;
+        }        
+
+/* inicia botonera responsive */
+.botonera--responsive {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+    .navbar-brand{
+        color: #1f3659;
+    }
+
+.boton--buscar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    border: none;
+    color: white;
+    background-color:#1f3659;
+}
+
+/* finaliza botonera responsive */
+
+
+
+/* comienza grid contacto */
+.grid__contacto{
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: repeat (8, 15px);
+    justify-content: center;
+}
+
+    section.grid__contacto div label {
+        display: flex;
+        justify-self: flex-start;
+    }
+
+/* finaliza grid contacto */
+
+
+
+form.categorias {
+    display: flex;
+    padding: 12px;
+    margin: 10px;
+    justify-content: flex-end;
+}
+
+    form.categorias select {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: .8em;
+        border: none;
+        margin-right: 8px;
+        padding: 10px;
+        text-decoration: underline;
+    }
+        
+        form.categorias select:hover {
+            font-weight: 500;
+        }   
+
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin: 20px;
+    color: black;
+    font-size: 2.5em;
+    font-weight: 300;
+    justify-content: center;
+}
+
+main section div.grid div.video video {
+    width: 80%;
+    margin: 15px;
+}
+
+/* comienza grid campaña del index*/
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "video texto"
+    "video boton";
+    background-color: #6b7b93;
+}
+
+.video {
+    display: flex;
+    grid-area: video;
+    justify-content: center;
+}
+
+.texto{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    grid-area: texto;
+    font-weight: 200;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+}
+
+.boton {
+    font-family: 'Montserrat', sans-serif;
+    grid-area: boton;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 15px;
+    margin: 15px;
+
+}
+
+    div.boton a button {
+        font-weight: 200;
+        border: none;
+        background-color:transparent;
+        font-size: .9em;
+        margin: 15px;
+    }
+
+        div.boton a button:hover {
+            font-weight: 500;
+        } 
+/* finaliza grid */
+
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    font-size: 2.5em;
+    font-weight: 300;
+    color: black;
+    justify-content: center;
+}
+
+main form div{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin: 12px 8px 12px 0px;
+    padding: 10px;
+    font-weight: 300;
+    justify-content: center;
+    }
+
+/* comienza grid indumentaria */
+.grid__indumentaria {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: auto;
+}
+    div.grid__indumentaria figure img {
+        width: 90%;
+        height: auto;
+        margin: 50px 20px 10px 20px;
+    }
+
+    div.grid__indumentaria figure figcaption {
+        font-weight: 300;
+        font-size: 1em;
+        margin: 0 0 5px 20px;
+    }
+
+    div.grid__indumentaria figure p {
+        font-weight: 300;
+        font-size: 1em;
+        margin: 0 0 5px 20px;
+    }
+
+    div.grid__indumentaria figure button {
+        font-weight: 300;
+        font-size: 1em;
+        margin: 0 0 5px 20px;
+        padding: 3px;
+        border: none;
+        background-color: transparent;
+    }
+
+        div.grid__indumentaria figure button:hover {
+            background-color: #1f3659;
+            color: white;
+        }
+/* termina grid indumentaria */
+
+
+/* comienza grid accesorios */
+.grid__accesorios {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: auto;
+}
+    div.grid__accesorios figure img {
+        width: 90%;
+        height: auto;
+        margin: 50px 20px 10px 20px;
+    }
+
+    div.grid__accesorios figure figcaption {
+        font-weight: 300;
+        font-size: 1em;
+        margin: 0 0 5px 20px;
+    }
+
+    div.grid__accesorios figure p {
+        font-weight: 300;
+        font-size: 1em;
+        margin: 0 0 5px 20px;
+    }
+
+    div.grid__accesorios figure button {
+        font-weight: 300;
+        font-size: 1em;
+        margin: 0 0 5px 20px;
+        padding: 3px;
+        border: none;
+        background-color: transparent;
+    }
+
+        div.grid__accesorios figure button:hover {
+            background-color: #1f3659;
+            color: white;
+        }
+/* termina grid accesorios */
+
+
+/* comienza grid ofertas */
+.grid__ofertas {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: auto;
+}
+    div.grid__ofertas figure img {
+        width: 90%;
+        height: auto;
+        margin: 50px 20px 10px 20px;
+    }
+
+    div.grid__ofertas figure figcaption {
+        font-weight: 300;
+        font-size: 1em;
+        margin: 0 0 5px 20px;
+    }
+
+    div.grid__ofertas figure p {
+        display: inline-block;
+        font-weight: 300;
+        font-size: 1em;
+        margin: 0 0 5px 20px;
+    }
+
+        div.grid__ofertas figure p.precio_original {
+            text-decoration:line-through;
+        }
+
+        div.grid__ofertas figure p.oferta {
+            color: green;
+        }
+
+    div.grid__ofertas figure button {
+        font-weight: 300;
+        font-size: 1em;
+        margin: 0 0 5px 20px;
+        padding: 3px;
+        border: none;
+        background-color: transparent;
+        display: block;
+    }
+
+        div.grid__ofertas figure button:hover {
+            background-color: #1f3659;
+            color: white;
+        }
+/* termina grid ofertas */
+
+
+/* comienza grid campaña */
+.grid__campaña {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: auto;
+}
+    div.grid__campaña figure img {
+        width: 90%;
+        height: auto;
+        margin: 50px 20px 10px 20px;
+    }
+
+    div.grid__campaña figure figcaption {
+        font-weight: 300;
+        font-size: 1em;
+        margin: 0 0 5px 20px;
+    }
+
+    div.grid__campaña figure p {
+        font-weight: 300;
+        font-size: 1em;
+        margin: 0 0 5px 20px;
+    }
+
+    div.grid__campaña figure button {
+        font-weight: 300;
+        font-size: 1em;
+        margin: 0 0 5px 20px;
+        padding: 3px;
+        border: none;
+        background-color: transparent;
+        display: block;
+    }
+
+        div.grid__campaña figure button:hover {
+            background-color: #1f3659;
+            color: white;
+        }
+/* termina grid campaña */
+
+
+/* inicia footer */
+footer {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: auto;
+    font-size: 1em;
+}
+
+    footer iframe {
+        width: 100px;
+        margin: 12px;
+        height: auto;
+    }
+
+    footer a {
+        text-decoration: none;
+    }
+
+        footer a img {
+            width: 36px;
+            height: 70%;
+
+        }
+/* finaliza footer */
+
+@media (width < 991px) {
+    .main_nav {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "video"
+        "texto"
+        "boton";
+    }
+
+}
+
+@media (width > 991px) {
+    .navbar {
+        display: none;
+    }
+}

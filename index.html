@@ -1,0 +1,141 @@
+<!-- inicia html vinculado con BS -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CREDERE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+
+<body>
+    <div class="box_top">Envío gratis en tu compra mayor a $10.000 + 3 cuotas sin interés</div>
+
+    <nav class="compras">
+        <a href="#">
+            <img src="img/carrito.png" alt="carrito de compras">
+        </a>
+        <a href="#">
+            <img src="img/user.png" alt="usuario">
+        </a>
+        <a href="#">
+            <img src="img/heart.png" alt="lista de deseos">
+        </a>
+        <a href="#">
+            <img src="img/search.png" alt="buscar">
+        </a>
+    </nav>
+
+    <!-- comienza main nav -->
+    <nav class="main_nav">        
+        <a href="index.html">
+            <h1 class="logo">C R E D E R E</h1>
+        </a>
+
+        <ul>
+            <li>
+                <a href="pages/indumentaria.html">INDUMENTARIA</a>
+            </li>
+            <li>
+                <a href="pages/accesorios.html">ACCESORIOS</a>
+            </li>
+            <li>
+                <a href="pages/ofertas.html">OFERTAS</a>
+            </li>
+            <li>
+                <a href="pages/campaña.html">CAMPAÑA</a>
+            </li>
+            <li>
+                <a href="pages/contacto.html">CONTACTO</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- finaliza main nav -->
+
+    <!-- comienza main nav - responsive -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary botonera--responsive">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">C R E D E R E</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="pages/campaña.html">Campaña</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pages/indumentaria.html">Indumentaria</a></li>
+                  <li><a class="dropdown-item" href="pages/accesorios.html">Accesorios</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="pages/ofertas.html">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" aria-label="Search">
+              <button class="btn btn-outline-success boton--buscar" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- finaliza main nav responsive -->
+
+    <!-- comienza main -->
+    <main>
+        <section>
+            <header>OFERTAS DESTACADAS</header>
+        </section>
+
+        <section>
+            <header>CAMPAÑA ss23</header>
+            <!-- comienza grid -->
+            <div class="grid">
+                <div class="video"><video src="video/campaña.mov" controls autoplay muted loop></video></div>
+                <div class="texto"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, in quis eius ullam vero labore. Recusandae, debitis neque perferendis quisquam qui earum molestias aliquid, placeat eveniet quod praesentium expedita aspernatur.</p></div>
+                <div class="boton"><a href="pages/campaña.html"><button>Ver productos</button></a></div>
+            </div>
+            <!-- finaliza grid -->        
+        </section>
+    </main>
+    <!-- finaliza main -->
+
+    <!-- comienza footer -->
+    <footer>
+        <!-- instagram -->
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="img/87390.png" alt="Seguinos en instagram">
+        </a>
+        <!-- facebook -->
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="img/44646.png" alt="Seguinos en facebook">
+        </a>
+        <!-- pinterest -->
+        <a href="https://www.pinterest.com">
+            <img src="img/25698.png" alt="Seguinos en pinterest">
+        </a>
+
+        <!-- comienza mapa -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0808519155075!2d-58.37610838456928!3d-34.602116964920796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaccfaa236bd%3A0x7ba6d630d36187c2!2sLavalle%20%26%20San%20Mart%C3%ADn%2C%20C1054%20CABA!5e0!3m2!1ses-419!2sar!4v1677862958945!5m2!1ses-419!2sar" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <!-- finaliza mapa -->
+        
+    </footer>
+    <!-- finaliza footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
+
