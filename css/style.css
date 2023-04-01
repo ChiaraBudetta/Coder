@@ -72,8 +72,6 @@ nav.compras {
 /* inicia botonera responsive */
 .botonera--responsive {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 1em;
     display: flex;
     flex-direction: column-reverse;
     width: 99vw;
@@ -89,6 +87,11 @@ nav.compras {
     border: none;
     color: white;
     background-color:#1f3659;
+}
+
+.botonera--responsive div div ul li a {
+    font-weight: 300;
+    font-size: .8em;
 }
 /* finaliza botonera responsive */
 
@@ -514,6 +517,9 @@ footer {
     .grid__campaña {
         grid-template-columns: 100%;
         grid-template-rows: auto;
+    }
+    .botonera--responsive {
+        font-size: 1em;
     }
 }
 
