@@ -550,7 +550,7 @@ footer {
 
 /* desktop */
 @media (width > 768px) {
-    .navbar {
+    nav.navbar {
         display: none;
     }
 
