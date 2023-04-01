@@ -486,7 +486,7 @@ footer {
 
 /* mobile */
 @media (width < 768px) {
-    .main_nav {
+    nav.main_nav {
         display: none;
     }
     nav.compras {
@@ -550,7 +550,7 @@ footer {
 
 /* desktop */
 @media (width > 768px) {
-    nav.navbar {
+    .navbar {
         display: none;
     }
 
