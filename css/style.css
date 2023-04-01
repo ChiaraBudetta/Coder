@@ -459,6 +459,22 @@ main form div{
         }
 /* termina grid campaña */
 
+/* comienza carrousel ofertas */
+.carousel--ofertas__index {
+    display: flex;
+    width: 100%;
+    background-color: #1f3659;
+}
+    .carousel--ofertas__index div {
+        justify-content: center;
+    }
+        .carousel--ofertas__index div img {
+            width: 40vw;
+            justify-content: center;
+        }
+
+/* finaliza carrousel ofertas */
+
 /* inicia footer */
 footer {
     font-family: 'Montserrat', sans-serif;
@@ -489,6 +505,17 @@ footer {
     .main_nav {
         display: none;
     }
+    nav.compras {
+        display: none;
+    }    
+    .box_top{
+        font-size: .7em;
+    }
+    header {
+        font-size: 2em;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
     .grid {
         grid-template-columns: 100%;
         grid-template-rows: auto;
@@ -502,20 +529,19 @@ footer {
         grid-template-rows: auto;
         justify-content: center;
     }
-    .box_top{
-        font-size: .7em;
-    }
-    header {
-        font-size: 2em;
-        margin-bottom: 15px;
-        margin-top: 15px;
-    }
-    .categorias {
-        font-size: .7em;
+    form.categorias {
+        display: none;
     }
     .grid__accesorios {
         grid-template-columns: 100%;
         grid-template-rows: auto;
+    }
+    .grid__ofertas {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    .grid--ofertas__index {
+        display: none;
     }
 }
 
@@ -524,7 +550,5 @@ footer {
     .navbar {
         display: none;
     }
-    .compras {
-        display: none;
-    }
+
 }
