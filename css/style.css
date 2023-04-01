@@ -184,6 +184,7 @@ main section div.grid div.video video {
     "video texto"
     "video boton";
     background-color: #6b7b93b3;
+    row-gap: 0;
 }
 
 .video {
@@ -191,7 +192,7 @@ main section div.grid div.video video {
     grid-area: video;
     justify-content: center;
     align-items: center;
-    width: 99%;
+    width: 100%;
 }
 
 .texto{
@@ -203,9 +204,9 @@ main section div.grid div.video video {
     line-height: 1.4em;
     justify-content: center;
     padding: 15px;
-    margin: 15px;
+    margin: 5px;
     text-align:center;
-    align-content: flex-end;
+    align-self: flex-end;
 }
 
 .boton {
@@ -213,11 +214,9 @@ main section div.grid div.video video {
     grid-area: boton;
     display: flex;
     justify-content: center;
-    align-content: flex-start;
-    padding: 15px;
-    margin: 15px;
-    font-size: 1.6em;
-
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.3em;
 }
 
     div.boton a button {
@@ -225,7 +224,8 @@ main section div.grid div.video video {
         border: none;
         background-color:transparent;
         font-size: .9em;
-        margin: 15px;
+        margin: 10px;
+        align-self: center;
     }
 
         div.boton a button:hover {
@@ -508,8 +508,8 @@ footer {
     }
     .video {
         width:90%;
-        justify-content: center;
-        margin: 0;
+        justify-self: center;
+        margin: 15px;
         padding: 0;
     }
     .grid {
@@ -553,5 +553,4 @@ footer {
     nav.navbar {
         display: none;
     }
-
 }
