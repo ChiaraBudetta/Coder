@@ -167,6 +167,7 @@ main section div.grid div.video video {
     display: flex;
     grid-area: video;
     justify-content: center;
+    align-items: center;
     width: 99%;
 }
 
@@ -479,13 +480,17 @@ footer {
     h1 {
         font-size: 1.5em;
         margin-bottom: 15px;
-        margin-top: 15px;       
+        margin-top: 15px; 
+        font-weight: 200;      
     }
     .texto {
         font-size: 1em;
     }
     .boton {
         font-size: 1em;
+    }
+    .video {
+        width:90vw;
     }
     .grid {
         grid-template-columns: 100%;
