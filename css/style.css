@@ -490,7 +490,7 @@ footer {
 
 
 /* mobile */
-@media (width < 768px) {
+@media (max-width: 768px) {
     nav.main_nav {
         display: none;
     }
@@ -534,7 +534,7 @@ footer {
 }
 
 /* desktop */
-@media (width > 768px) {
+@media (min-width: 768px) {
     nav.navbar {
         display: none !important;
     }
