@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: $main_font;
+    display: flex;
+    margin: 20px;
+    color: black;
+    font-size: $text_lg;
+    font-weight: $text_regular;
+    justify-content: center;
+}
+
+header {
+    font-family: $main_font;
+    display: flex;
+    font-size: $text_lg;
+    font-weight: $text_regular;
+    color: black;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 130px;
+}
+
+.box_top {
+    display: flex;
+    font-family: $main_font;
+    font-weight: $text_regular;
+    font-size: $text_xs;
+    background-color: black;
+    color: white;
+    padding: 6px;
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    padding: 12px;
+    margin: 10px;
+    justify-content: flex-end;
+    select {
+        font-family: $main_font;
+        font-weight: $text_light;
+        font-size: $text_xs;
+        border: none;
+        margin-right: 8px;
+        padding: 10px;
+        text-decoration: underline;
+        &:hover {
+            font-weight: $text_bold;
+        }
+    }
+}
+
+
+// carrousel
+main {
+    div {
+        .carousel--ofertas__index {
+            width: 100%;
+            div {
+                img {
+                    width: 100%;
+                }
+            }
+        }        
+    }
+}
+
+
+
+// footer
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding: 20px;
+    display:flex;
+    .container {  
+        max-width: 1200px;
+        margin: 0 auto;
+        .grid--footer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            .grid-item {
+                padding: 10px;
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    li {
+                        margin-bottom: 10px;
+                        a {
+                            color:$main_color;
+                            text-decoration: none;
+                            &:hover {
+                                font-weight: $text_bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+  
+  
+
+  
+
+
+
+
+
+

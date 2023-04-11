@@ -1,0 +1,52 @@
+// responsive 
+@media (max-width: 768px) {
+    .main_nav {
+        display: none;
+    }
+    .compras {
+        display: none;
+    }    
+    .grid {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "video"
+        "texto"
+        "boton";
+    }
+    .grid__indumentaria {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    form.categorias {
+        display: none;
+    }
+    .grid__accesorios {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    .grid__ofertas {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    .grid--ofertas__index {
+        display: none;
+    }
+    .grid__campaña {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    .botonera--responsive {
+        font-size: $text_sm;
+    }
+    .grid--footer {
+        grid-template-columns: 100vw;
+      }
+}
+
+// desktop
+@media (min-width: 768px) {
+    nav.navbar {
+        display: none;
+    }
+}

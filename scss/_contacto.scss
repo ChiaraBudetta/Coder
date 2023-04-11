@@ -1,0 +1,12 @@
+main {
+    section.grid__contacto {
+        div {
+            font-family: $main_font;
+            display: flex;
+            margin: 12px 8px 12px 0px;
+            padding: 10px;
+            font-weight: $text_regular;
+            justify-content: center;
+        }
+    }
+}

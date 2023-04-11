@@ -1,0 +1,255 @@
+// contacto
+.grid__contacto{
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: repeat (8, 15px);
+    justify-content: center;
+    div {
+        label {
+            display: flex;
+            justify-self: flex-start;
+        }
+    }
+}
+
+// campaña index
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "video texto"
+    "video boton";
+    background-color: $secondary_color;
+    row-gap: 0;
+}
+
+.video {
+    display: flex;
+    grid-area: video;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    justify-self: center;
+    margin: 15px;
+    padding: 0;
+}
+
+.texto{
+    font-family: $main_font;
+    display: flex;
+    grid-area: texto;
+    font-weight: $text_light;
+    font-size: $text_sm;
+    line-height: 1.4em;
+    justify-content: center;
+    padding: 15px;
+    margin: 5px;
+    text-align:center;
+    align-self: flex-end;
+    justify-self: center;
+    width: 80%;
+}
+
+.boton {
+    font-family: $main_font;
+    grid-area: boton;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: $text_sm;
+    a {
+        button {
+            font-weight: $text_light;
+            border: none;
+            background-color:transparent;
+            font-size: $text_xs;
+            margin: 10px;
+            align-self: center;
+            &:hover{
+                font-weight: $text_bold;
+                background-color: white;
+            }        
+        }
+    }
+}
+
+
+// indumentaria
+.grid__indumentaria {
+    font-family: $main_font;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: auto;
+    figure {
+        img {
+            width: 90%;
+            height: auto;
+            margin: 50px 20px 10px 20px;
+        }
+        figcaption {
+            font-weight: $text_regular;
+            font-size: $text_sm;
+            margin: 0 0 5px 20px;
+        }
+        p{
+            display: inline-block;
+            font-weight: $text_regular;
+            font-size: $text_sm;
+            margin: 0 0 5px 20px;
+            &.precio_original {
+                text-decoration:line-through;
+            }
+            &.oferta {
+                color: green;
+            }
+        }
+        button {
+            font-weight: $text_regular;
+            font-size: $text_sm;
+            margin: 0 0 5px 20px;
+            padding: 3px;
+            border: none;
+            background-color: transparent;
+            display: block;
+            &:hover {
+                background-color: $main_color;
+                color: white;                
+            }
+        }
+    }
+}
+
+
+// accesorios
+.grid__accesorios {
+    font-family: $main_font;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: auto;
+    figure {
+        img {
+            width: 90%;
+            height: auto;
+            margin: 50px 20px 10px 20px;
+        }
+        figcaption {
+            font-weight: $text_regular;
+            font-size: $text_sm;
+            margin: 0 0 5px 20px;
+        }
+        p{
+            display: inline-block;
+            font-weight: $text_regular;
+            font-size: $text_sm;
+            margin: 0 0 5px 20px;
+            &.precio_original {
+                text-decoration:line-through;
+            }
+            &.oferta {
+                color: green;
+            }
+        }
+        button {
+            font-weight: $text_regular;
+            font-size: $text_sm;
+            margin: 0 0 5px 20px;
+            padding: 3px;
+            border: none;
+            background-color: transparent;
+            display: block;
+            &:hover {
+                background-color: $main_color;
+                color: white;                
+            }
+        }
+    }
+}
+
+
+// ofertas
+.grid__ofertas {
+    font-family: $main_font;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: auto;
+    figure {
+        img {
+            width: 90%;
+            height: auto;
+            margin: 50px 20px 10px 20px;
+        }
+        figcaption {
+            font-weight: $text_regular;
+            font-size: $text_sm;
+            margin: 0 0 5px 20px;
+        }
+        p {
+            display: inline-block;
+            font-weight: $text_regular;
+            font-size: $text_sm;
+            margin: 0 0 5px 20px;
+            &.precio_original {
+                text-decoration:line-through;
+            }
+            &.oferta {
+                color: green;
+            }
+        }
+        button {
+            font-weight: $text_regular;
+            font-size: $text_sm;
+            margin: 0 0 5px 20px;
+            padding: 3px;
+            border: none;
+            background-color: transparent;
+            display: block;
+            &:hover {
+                background-color: $main_color;
+                color: white;                
+            }
+        }
+    }
+}
+
+
+// campaña
+.grid__campaña {
+    font-family: $main_font;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: auto;
+    figure {
+        img {
+            width: 90%;
+            height: auto;
+            margin: 50px 20px 10px 20px;
+        }
+        figcaption {
+            font-weight: $text_regular;
+            font-size: $text_sm;
+            margin: 0 0 5px 20px;
+        }
+        p {
+            display: inline-block;
+            font-weight: $text_regular;
+            font-size: $text_sm;
+            margin: 0 0 5px 20px;
+        }
+        button {
+            font-weight: $text_regular;
+            font-size: $text_sm;
+            margin: 0 0 5px 20px;
+            padding: 3px;
+            border: none;
+            background-color: transparent;
+            display: block;
+            &:hover {
+                background-color: $main_color;
+                color: white;                
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+// nav compras
+.compras {
+    display: flex;
+    justify-content: flex-end;
+    a {
+        text-decoration: none;
+        img {
+            width: 24px;
+            height: auto;
+            margin: 20px 16px 0 0;
+            padding: 2px;
+        }
+    }
+}
+
+// nav principal
+.main_nav {
+    font-family: $main_font;
+    display: flex;
+    font-weight: $text_regular;
+    font-size: $text_sm;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    width: 100%;
+    a {
+        text-decoration: none;
+        h1 {
+            font-size: $text_xl;
+            color: $main_color;
+            font-weight: $text_light;
+            padding: 0 80px;
+            justify-content: center;
+        }
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        li {
+            padding: 20px;
+            margin: 20px 0 0 20px;
+            width: 100%;
+            &:last-child {
+                padding-right: 0;
+                margin-right: 0;
+            }
+            &:first-child {
+                padding-left: 0;
+                margin-left: 0;
+            }
+            a {
+                color: black;
+                text-decoration: none;
+                &:hover {
+                    color: black;
+                    font-weight: $text_bold;
+                }
+            }
+        }
+    }
+}
+
+
+// nav responsive
+.botonera--responsive {
+    font-family: $main_font;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    div {
+        a{
+            &.navbar-brand {
+                color: $main_color;
+            }
+            &.logo {
+                font-weight: $text_regular;
+            }
+        }
+        div {
+            ul {
+                li {
+                    a{
+                        font-weight: $text_regular;
+                    }
+                }
+            }
+            form {
+                button {
+                    &.boton--buscar {
+                        font-family: $main_font;
+                        font-weight: $text_regular;
+                        border: none;
+                        color: white;
+                        background-color:$main_color;
+                    }
+                }
+            }
+        }
+    }
+}

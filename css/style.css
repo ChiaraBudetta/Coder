@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
 
-body {
+/* body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .box_top {
@@ -16,9 +17,9 @@ body {
     margin: 0;
     justify-content: center;
     width: 100%;
-}
+} */
 
-nav.compras {
+/* nav.compras {
     display: flex;
     justify-content: flex-end;
 }
@@ -31,11 +32,11 @@ nav.compras {
             height: auto;
             margin: 20px 16px 0 0;
             padding: 2px;
-        }
+        } */
 
 
 /* inicia main nav */
-.main_nav {
+/* .main_nav {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     font-weight: 300;
@@ -85,11 +86,11 @@ nav.compras {
         nav.main_nav ul li a:hover {
             color: black;
             font-weight: 500;
-        }        
+        }         */
 /* finaliza main nav */
 
 /* inicia botonera responsive */
-.botonera--responsive {
+/* .botonera--responsive {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column-reverse;
@@ -110,18 +111,18 @@ nav.compras {
 
 .botonera--responsive div div ul li a {
     font-weight: 300;
-    font-size: .8em;
+    font-size: .8em; 
 }
 
-.logo {
+ .logo {
     font-weight: 300;
-}
+} */
 /* finaliza botonera responsive */
 
 
 
 /* comienza grid contacto */
-.grid__contacto{
+/* .grid__contacto{
     display: grid;
     grid-template-columns: 200px;
     grid-template-rows: repeat (8, 15px);
@@ -131,12 +132,12 @@ nav.compras {
     section.grid__contacto div label {
         display: flex;
         justify-self: flex-start;
-    }
+    } */
 /* finaliza grid contacto */
 
 
 
-form.categorias {
+/* form.categorias {
     display: flex;
     padding: 12px;
     margin: 10px;
@@ -167,15 +168,15 @@ h1 {
     font-size: 2.5em;
     font-weight: 300;
     justify-content: center;
-}
+} */
 
-main section div.grid div.video video {
+/* main section div.grid div.video video {
     width: 90%;
     margin: 15px;
 }
 
 /* comienza grid campaña del index*/
-.grid {
+/* .grid {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -236,11 +237,11 @@ main section div.grid div.video video {
         div.boton a button:hover {
             font-weight: 500;
             background-color: white;
-        } 
+        }  */ 
 /* finaliza grid campaña del index*/
 
 
-header {
+/* header {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     font-size: 1.8em;
@@ -249,19 +250,19 @@ header {
     justify-content: center;
     margin-bottom: 30px;
     margin-top: 130px;
-}
+} */
 
-main form div{
+/* main form div{
     font-family: 'Montserrat', sans-serif;
     display: flex;
     margin: 12px 8px 12px 0px;
     padding: 10px;
     font-weight: 300;
     justify-content: center;
-    }
+    } */
 
 /* comienza grid indumentaria */
-.grid__indumentaria {
+/* .grid__indumentaria {
     font-family: 'Montserrat', sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
@@ -307,12 +308,12 @@ main form div{
         div.grid__indumentaria figure button:hover {
             background-color: #1f3659;
             color: white;
-        }
+        } */
 /* termina grid indumentaria */
 
 
 /* comienza grid accesorios */
-.grid__accesorios {
+/* .grid__accesorios {
     font-family: 'Montserrat', sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
@@ -358,12 +359,12 @@ main form div{
         div.grid__accesorios figure button:hover {
             background-color: #1f3659;
             color: white;
-        }
+        } */
 /* termina grid accesorios */
 
 
 /* comienza grid ofertas */
-.grid__ofertas {
+/* .grid__ofertas {
     font-family: 'Montserrat', sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
@@ -409,11 +410,11 @@ main form div{
         div.grid__ofertas figure button:hover {
             background-color: #1f3659;
             color: white;
-        }
+        } */
 /* termina grid ofertas */
 
 /* comienza grid campaña */
-.grid__campaña {
+/* .grid__campaña {
     font-family: 'Montserrat', sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
@@ -450,20 +451,20 @@ main form div{
         div.grid__campaña figure button:hover {
             background-color: #1f3659;
             color: white;
-        }
+        } */
 /* termina grid campaña */
 
 /* comienza carrousel ofertas */
-.carousel--ofertas__index {
+/* .carousel--ofertas__index {
     width: 100%;
 }
         .carousel--ofertas__index div img {
             width: 100%;
-        }
+        } */
 /* finaliza carrousel ofertas */
 
 /* inicia footer */
-.footer {
+/* .footer {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     padding: 20px;
@@ -501,14 +502,14 @@ main form div{
   
   ul li a:hover {
     font-weight: 500;
-  }
+  } */
 /* finaliza footer */
 
 
 
 /* mobile */
 @media (max-width: 768px) {
-    nav.main_nav {
+    /* nav.main_nav {
         display: none;
     }
     nav.compras {
@@ -549,12 +550,12 @@ main form div{
     }
     .grid--footer {
         grid-template-columns: 100vw;
-      }
+      } */
 }
 
 /* desktop */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     nav.navbar {
         display: none !important;
     }
-}
+} */
