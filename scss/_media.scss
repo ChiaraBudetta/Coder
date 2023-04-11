@@ -39,9 +39,13 @@
     .botonera--responsive {
         font-size: $text_sm;
     }
-    .grid--footer {
-        grid-template-columns: 100vw;
-      }
+    .footer {
+        .container {
+            .grid--footer {
+                grid-template-columns: 100%;
+            }
+        }
+    }
 }
 
 // desktop

@@ -73,7 +73,7 @@ main div .carousel--ofertas__index div img {
   display: flex;
 }
 .footer .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .footer .container .grid--footer {
@@ -92,6 +92,7 @@ main div .carousel--ofertas__index div img {
   margin-bottom: 10px;
 }
 .footer .container .grid--footer .grid-item ul li a {
+  flex-wrap: nowrap;
   color: #1f3659;
   text-decoration: none;
 }
@@ -451,8 +452,8 @@ main div .carousel--ofertas__index div img {
   .botonera--responsive {
     font-size: 1em;
   }
-  .grid--footer {
-    grid-template-columns: 100vw;
+  .footer .container .grid--footer {
+    grid-template-columns: 100%;
   }
 }
 @media (min-width: 768px) {

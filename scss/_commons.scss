@@ -76,12 +76,12 @@ main {
 
 // footer
 .footer {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-family: $main_font;
+    font-weight: $text_regular;
     padding: 20px;
     display:flex;
     .container {  
-        max-width: 1200px;
+        max-width: 100%;
         margin: 0 auto;
         .grid--footer {
             display: grid;
@@ -95,6 +95,7 @@ main {
                     li {
                         margin-bottom: 10px;
                         a {
+                            flex-wrap: nowrap;
                             color:$main_color;
                             text-decoration: none;
                             &:hover {
