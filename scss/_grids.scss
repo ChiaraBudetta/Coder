@@ -41,7 +41,7 @@
     display: flex;
     grid-area: texto;
     font-weight: $text_light;
-    font-size: $text_sm;
+    font-size: $text_md;
     line-height: 1.4em;
     justify-content: center;
     padding: 15px;
@@ -59,15 +59,14 @@
     justify-content: center;
     padding: 5px;
     margin: 5px;
-    font-size: $text_sm;
+    font-size: $text_md;
     a {
         button {
             font-weight: $text_light;
             border: none;
             background-color:transparent;
-            font-size: $text_xs;
             margin: 10px;
-            align-self: center;
+            align-self: end;
             &:hover{
                 font-weight: $text_bold;
                 background-color: white;

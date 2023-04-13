@@ -15,27 +15,37 @@
 
 // nav principal
 .main_nav {
+    position: relative;
     font-family: $main_font;
     display: flex;
     font-weight: $text_regular;
     font-size: $text_sm;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
     width: 100%;
     a {
         text-decoration: none;
-        h1 {
+        .title--index {
             font-size: $text_xl;
             color: $main_color;
             font-weight: $text_light;
-            padding: 0 80px;
+            padding: 0;
             justify-content: center;
+        }
+        header {
+            p {             
+                font-size: $text_xl;
+                color: $main_color;
+                font-weight: $text_light;
+                padding: 0;
+                justify-content: center;                
+            }
         }
     }
     ul {
         display: flex;
         list-style: none;
+        position: absolute;
+        bottom: -50%;
         li {
             padding: 20px;
             margin: 20px 0 0 20px;
@@ -71,8 +81,6 @@
         a{
             &.navbar-brand {
                 color: $main_color;
-            }
-            &.logo {
                 font-weight: $text_regular;
             }
         }
