@@ -1,10 +1,11 @@
 // hago los imports en cascada
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
 @import "_vars";
+@import "_mixins";
 @import "_nav";
 @import "commons";
 @import "_grids";
 @import "_media";
-@import "_contacto"
+
 
 

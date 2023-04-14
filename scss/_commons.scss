@@ -4,6 +4,16 @@ body {
     overflow-x: hidden;
 }
 
+.box_top {
+        animation-delay: 0s;
+        font-family: $main_font;
+        font-weight: $text_regular;
+        font-size: $text_xs;
+        background-color: black;
+        color: white;
+        
+}
+
 h1 {
     font-family: $main_font;
     display: flex;
@@ -11,7 +21,7 @@ h1 {
     color: black;
     font-size: $text_lg;
     font-weight: $text_regular;
-    justify-content: center;
+    @include flex (center, center);
     &.title--contacto {
         margin-top: 20vh;
     }
@@ -24,28 +34,16 @@ h2 {
     color: black;
     font-size: $text_lg;
     font-weight: $text_regular;
-    justify-content: center;
+    @include flex (center, center);
     margin-top: 18vh;
 }
 
-.box_top {
-    display: flex;
-    font-family: $main_font;
-    font-weight: $text_regular;
-    font-size: $text_xs;
-    background-color: black;
-    color: white;
-    padding: 6px;
-    margin: 0;
-    justify-content: center;
-    width: 100%;
-}
 
 form {
     display: flex;
     padding: 12px;
     margin: 15vh 10px 5vh 10px;
-    justify-content: flex-end;
+    @include flex (end, center);
     select {
         font-family: $main_font;
         font-weight: $text_light;
@@ -113,8 +111,6 @@ main {
 }
 
 
-
-  
   
 
   

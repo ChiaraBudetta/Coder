@@ -46,6 +46,16 @@
         grid-template-columns: 100%;
         grid-template-rows: auto;
     }
+    .grid--error404 {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        .title--eror404{
+            margin-top: auto;
+        } 
+        .img--error {
+            margin-top: auto;
+        }       
+    }
     .botonera--responsive {
         font-size: $text_sm;
     }
