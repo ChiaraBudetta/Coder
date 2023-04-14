@@ -203,16 +203,16 @@ main div .carousel--ofertas__index div img {
 }
 
 main form {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1em;
+  margin-top: 3vh;
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 40vw;
+  width: 100vw;
 }
 main form .grid__contacto {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
+  font-weight: 300;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat 8, 15px;
@@ -240,6 +240,7 @@ main form .grid__contacto div label {
   width: 100%;
   margin: 60px;
   padding: 0;
+  justify-content: center;
 }
 .grid .texto {
   font-family: "Montserrat", sans-serif;
@@ -249,21 +250,16 @@ main form .grid__contacto div label {
   font-size: 1em;
   line-height: 1.5em;
   padding: 30px;
-  justify-self: center;
-  align-self: end;
-  display: flex;
   justify-content: center;
-  align-content: end;
 }
 .grid .boton {
   font-family: "Montserrat", sans-serif;
   grid-area: boton;
   display: flex;
   font-size: 1em;
+  justify-content: center;
 }
 .grid .boton a {
-  justify-self: center;
-  align-self: center;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -273,7 +269,6 @@ main form .grid__contacto div label {
   font-weight: 200;
   border: none;
   background-color: transparent;
-  justify-self: center;
 }
 .grid .boton a button:hover {
   background-color: #1f3659;
@@ -356,7 +351,7 @@ main form .grid__contacto div label {
   color: black;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .main_nav {
     display: none;
   }
@@ -370,9 +365,22 @@ main form .grid__contacto div label {
     height: auto;
   }
   .grid {
+    overflow-x: hidden;
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "video" "texto" "boton";
+  }
+  .grid .video {
+    padding: 5px;
+    margin: 0;
+  }
+  .grid .texto {
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .grid .boton {
+    margin-right: 0;
+    padding-right: 0;
   }
   .grid__indumentaria, .grid__accesorios, .grid__ofertas {
     grid-template-columns: 100%;
@@ -413,7 +421,7 @@ main form .grid__contacto div label {
     grid-template-columns: 100%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .navbar {
     display: none;
   }

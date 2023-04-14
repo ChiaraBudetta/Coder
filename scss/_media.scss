@@ -1,5 +1,5 @@
 // responsive 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     .main_nav {
         display: none;
     }
@@ -17,12 +17,25 @@
         }
     }  
     .grid {
+        overflow-x: hidden;
         grid-template-columns: 100%;
         grid-template-rows: auto;
         grid-template-areas: 
         "video"
         "texto"
         "boton";
+        .video {
+            padding: 5px;
+            margin: 0;
+        }
+        .texto {
+            margin-right: 0;
+            padding-right: 0;
+        }
+        .boton {
+            margin-right: 0;
+            padding-right: 0;
+        }
     }
     .grid__indumentaria {
         grid-template-columns: 100%;
@@ -69,7 +82,7 @@
 }
 
 // desktop
-@media (min-width: 768px) {
+@media (min-width: 820px) {
     .navbar {
         display: none;
     }

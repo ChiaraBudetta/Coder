@@ -1,13 +1,13 @@
 // contacto
 main {
     form {
-        font-family: $main_font;
-        font-size: $text_sm;
+        margin-top: 3vh;
         @include flex (center, center);
-        width: 40vw;
+        width: 100vw;
         .grid__contacto{
             font-family: $main_font;
             font-size: $text_sm;
+            font-weight: $text_regular;
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: repeat (8, 15px);
@@ -38,6 +38,7 @@ main {
         width: 100%;
         margin: 60px;
         padding: 0;
+        justify-content: center;
     }    
     .texto{
         font-family: $main_font;
@@ -47,25 +48,21 @@ main {
         font-size: $text_sm;
         line-height: $line_height_regular;
         padding: 30px;
-        justify-self: center;
-        align-self: end;
-        @include flex (center, end);
+        justify-content: center;
     }
     .boton {
         font-family: $main_font;
         grid-area: boton;
         display: flex;
         font-size: $text_sm;
+        justify-content: center;
         a {
-            justify-self: center;
-            align-self: center;
             text-decoration: none;
             @include flex (center, center);
             button {
                 font-weight: $text_light;
                 border: none;
                 background-color:transparent;
-                justify-self: center;
                 &:hover{
                     background-color: $main_color;
                     color: white;
