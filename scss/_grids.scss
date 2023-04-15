@@ -11,11 +11,11 @@ main {
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: repeat (8, 15px);
+            line-height: $line_height_regular;
             div {
                 label {
                     justify-self: flex-start;
                     @include flex (start, end);
-                    line-height: $line_height_regular;
                 }
             }
         }

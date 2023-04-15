@@ -216,13 +216,13 @@ main form .grid__contacto {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat 8, 15px;
+  line-height: 1.5em;
 }
 main form .grid__contacto div label {
   justify-self: flex-start;
   display: flex;
   justify-content: start;
   align-content: end;
-  line-height: 1.5em;
 }
 
 .grid {
@@ -361,6 +361,9 @@ main form .grid__contacto div label {
   h2 {
     margin: 40px;
   }
+  .title--contacto {
+    margin-top: 5vh;
+  }
   main div .carousel--ofertas__index {
     height: auto;
   }
@@ -407,12 +410,17 @@ main form .grid__contacto div label {
   .grid--error404 {
     grid-template-columns: 100%;
     grid-template-rows: auto;
+    grid-template-areas: "titulo" "img" "boton";
   }
   .grid--error404 .title--eror404 {
-    margin-top: auto;
+    margin-top: 5vh;
   }
   .grid--error404 .img--error {
-    margin-top: auto;
+    margin-top: 5px;
+  }
+  .grid--error404 .boton--error404 {
+    justify-self: center;
+    margin-top: 10px;
   }
   .botonera--responsive {
     font-size: 1em;
