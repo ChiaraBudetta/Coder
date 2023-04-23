@@ -103,13 +103,29 @@ body {
   overflow-x: hidden;
 }
 
+@keyframes animacion {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 .box_top {
-  animation-delay: 0s;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 0.8em;
   background-color: black;
   color: white;
+  overflow: hidden;
+}
+.box_top p {
+  margin: 5px;
+  animation-name: animacion;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
 }
 
 h1 {
