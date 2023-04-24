@@ -210,6 +210,18 @@ main div .carousel--ofertas__index div img {
 .footer .container .grid--footer .grid-item ul li {
   margin-bottom: 10px;
 }
+.footer .container .grid--footer .grid-item ul li.ig {
+  display: inline-block;
+  margin: 3vh 1vw;
+}
+.footer .container .grid--footer .grid-item ul li.fb {
+  display: inline-block;
+  margin: 3vh 1vw;
+}
+.footer .container .grid--footer .grid-item ul li.pts {
+  display: inline-block;
+  margin: 3vh 1vw;
+}
 .footer .container .grid--footer .grid-item ul li a {
   color: #1f3659;
   text-decoration: none;
@@ -231,7 +243,7 @@ main form .grid__contacto {
   font-weight: 300;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: repeat 8, 15px;
+  grid-template-rows: repeat 9, 15px;
   line-height: 1.5em;
 }
 main form .grid__contacto div label {
@@ -239,6 +251,22 @@ main form .grid__contacto div label {
   display: flex;
   justify-content: start;
   align-content: end;
+  margin-top: 5vh;
+}
+main form .grid__contacto div input {
+  width: 100%;
+}
+main form .grid__contacto a {
+  justify-self: end;
+  width: 25%;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 5vh;
+}
+main form .grid__contacto a:hover {
+  font-weight: 500;
 }
 
 .grid {
@@ -442,7 +470,14 @@ main form .grid__contacto div label {
     font-size: 1em;
   }
   .footer .container .grid--footer {
+    justify-items: center;
+    justify-content: center;
     grid-template-columns: 100%;
+  }
+  .footer .container .grid--footer .grid-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
   }
 }
 @media (min-width: 820px) {

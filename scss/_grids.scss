@@ -10,17 +10,35 @@ main {
             font-weight: $text_regular;
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows: repeat (8, 15px);
+            grid-template-rows: repeat (9, 15px);
             line-height: $line_height_regular;
             div {
                 label {
                     justify-self: flex-start;
                     @include flex (start, end);
+                    margin-top: 5vh;
+                }
+                input {
+                    width: 100%;
+                }
+            }
+            a {
+                justify-self: end;
+                width: 25%;
+                text-decoration:none;
+                background-color: black;
+                color: white;
+                padding: 10px;
+                margin: 5vh;
+                &:hover {
+                    font-weight: $text_bold;
                 }
             }
         }
     }
 }
+
+
 // campaña index
 .grid {
     display: grid;
@@ -74,10 +92,6 @@ main {
 
 
 
-
-
-
-
 // campaña
 .grid__campaña {
     font-family: $main_font;
@@ -116,6 +130,7 @@ main {
         }
     }
 }
+
 
 // indumentaria
 .grid__indumentaria {
@@ -176,8 +191,4 @@ main {
         color: black;
     }
 }    
-
-
-
-
 
