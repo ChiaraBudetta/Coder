@@ -66,7 +66,8 @@ main {
         font-size: $text_sm;
         line-height: $line_height_regular;
         padding: 30px;
-        justify-content: center;
+        justify-items: center;
+        margin-top: 8vh;
     }
     .boton {
         font-family: $main_font;
@@ -82,8 +83,8 @@ main {
                 border: none;
                 background-color:transparent;
                 &:hover{
-                    background-color: $main_color;
                     color: white;
+                    font-weight: $text_bold;
                 }        
             }
         }

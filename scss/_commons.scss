@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
 }
 
-// animacion con keyframe
+// animacion boxtop con keyframe
 @keyframes animacion {
     from { transform: translateX(100%); }
     to { transform: translateX(-100%); }
@@ -19,7 +19,7 @@ body {
         p {
             margin: 5px;
             animation-name: animacion;
-            animation-duration: 18s;
+            animation-duration: 20s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             animation-delay: 0s;

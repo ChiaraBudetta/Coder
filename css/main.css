@@ -122,7 +122,7 @@ body {
 .box_top p {
   margin: 5px;
   animation-name: animacion;
-  animation-duration: 18s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 0s;
@@ -294,7 +294,8 @@ main form .grid__contacto a:hover {
   font-size: 1em;
   line-height: 1.5em;
   padding: 30px;
-  justify-content: center;
+  justify-items: center;
+  margin-top: 8vh;
 }
 .grid .boton {
   font-family: "Montserrat", sans-serif;
@@ -315,8 +316,8 @@ main form .grid__contacto a:hover {
   background-color: transparent;
 }
 .grid .boton a button:hover {
-  background-color: #1f3659;
   color: white;
+  font-weight: 500;
 }
 
 .grid__campaña, .grid__indumentaria, .grid__ofertas, .grid__accesorios {
@@ -423,7 +424,8 @@ main form .grid__contacto a:hover {
   }
   .grid .texto {
     margin-right: 0;
-    padding-right: 0;
+    margin-top: 2vh;
+    padding-right: 2vw;
   }
   .grid .boton {
     margin-right: 0;
